@@ -1,16 +1,16 @@
-# React + PHP LoginPage
+# React + PHP LoginPage 🚀
 
 A simple authentication app using **React (Vite)** for the frontend and **PHP (XAMPP/MySQL)** for the backend.
 
 ---
 
-## Deskripsi
+## Deskripsi 📚
 
 Projek ini dibuat untuk memahami **CORS** dan sebagai pembelajaran **React + PHP XAMPP Development**.
 
 ---
 
-## Fitur
+## Fitur ✨
 
 - Register user baru (dengan validasi username & email unik)
 - Login user
@@ -20,7 +20,7 @@ Projek ini dibuat untuk memahami **CORS** dan sebagai pembelajaran **React + PHP
 
 ---
 
-## Struktur Folder
+## Struktur Folder 📁
 
 ```
 loginpage/
@@ -34,57 +34,57 @@ loginpage/
 
 ---
 
-## Cara Development
+## Cara Development 🛠️
 
 1. **Jalankan XAMPP/Apache**  
-   Pastikan folder ini ada di `htdocs` dan Apache berjalan.
+    Pastikan folder ini ada di `htdocs` dan Apache berjalan.
 
 2. **Jalankan React Dev Server**  
-   ```
-   npm install
-   npm run dev
-   ```
-   Frontend berjalan di `http://localhost:5173/`
+    ```
+    npm install
+    npm run dev
+    ```
+    Frontend berjalan di `http://localhost:5173/`
 
 3. **Proxy API**  
-   Sudah diatur di `vite.config.js`:
-   ```js
-   server: {
-     proxy: {
-       '/api': 'http://localhost/loginpage'
-     }
-   }
-   ```
-   Sehingga request `/api/*` dari React akan diteruskan ke backend PHP.
+    Sudah diatur di `vite.config.js`:
+    ```js
+    server: {
+      proxy: {
+         '/api': 'http://localhost/loginpage'
+      }
+    }
+    ```
+    Sehingga request `/api/*` dari React akan diteruskan ke backend PHP.
 
 ---
 
-## Cara Build & Deploy
+## Cara Build & Deploy 🚢
 
 1. **Build React**
-   ```
-   npm run build
-   ```
-   Hasil build ada di folder `dist`.
+    ```
+    npm run build
+    ```
+    Hasil build ada di folder `dist`.
 
 2. **Pindahkan hasil build ke XAMPP**
-   - Copy isi folder `dist` ke `htdocs/loginpage/dist` atau langsung ke `htdocs/loginpage` jika ingin root.
+    - Copy isi folder `dist` ke `htdocs/loginpage/dist` atau langsung ke `htdocs/loginpage` jika ingin root.
 
 3. **Akses di browser**
-   ```
-   http://localhost/loginpage/dist/
-   ```
-   atau
-   ```
-   http://localhost/loginpage/
-   ```
+    ```
+    http://localhost/loginpage/dist/
+    ```
+    atau
+    ```
+    http://localhost/loginpage/
+    ```
 
 4. **Tidak perlu proxy atau CORS di production**  
-   Karena frontend dan backend sudah satu domain.
+    Karena frontend dan backend sudah satu domain.
 
 ---
 
-## Catatan
+## Catatan 📝
 
 - **CORS** hanya diperlukan saat development (karena port berbeda).
 - **Session** belum digunakan, hanya autentikasi sederhana.
@@ -92,7 +92,7 @@ loginpage/
 
 ---
 
-## Database
+## Database 🗄️
 
 Contoh struktur tabel `users`:
 
@@ -108,20 +108,20 @@ CREATE TABLE users (
 
 ---
 
-## Kontribusi
+## Kontribusi 🤝
 
 Silakan modifikasi dan kembangkan sesuai kebutuhan pembelajaran Anda!
 
 ---
 
-## Author
+## Author 👨‍💻
 
 - Dimas
 - GitHub Copilot
 
 ---
 
-## Routing
+## Routing 🗺️
 
 Aplikasi frontend menggunakan **React Router** untuk navigasi antar halaman:
 - `/` atau `/login` untuk halaman login
@@ -129,3 +129,4 @@ Aplikasi frontend menggunakan **React Router** untuk navigasi antar halaman:
 - `/home` untuk halaman utama setelah login
 
 Semua pengaturan routing terdapat di file `src/App.jsx`.
+
