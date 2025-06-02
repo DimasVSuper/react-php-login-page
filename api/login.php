@@ -1,4 +1,10 @@
 <?php
+/**
+ * Endpoint login user.
+ * Menerima POST JSON: { "username": "...", "password": "..." }
+ * Mengembalikan JSON hasil autentikasi.
+ */
+
 header('Access-Control-Allow-Origin: http://localhost:5173'); // Atau ganti * dengan asal frontend Anda
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: POST, OPTIONS');

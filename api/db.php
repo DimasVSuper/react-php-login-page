@@ -1,4 +1,14 @@
 <?php
+/**
+ * Koneksi ke database menggunakan PDO.
+ * 
+ * @var string $host Host database
+ * @var string $db   Nama database
+ * @var string $user Username database
+ * @var string $pass Password database
+ * @var PDO    $pdo  Instance PDO yang digunakan untuk query
+ */
+
 $host = 'localhost';
 $db   = 'loginpage_db';
 $user = 'root';

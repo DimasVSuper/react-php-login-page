@@ -1,4 +1,10 @@
 <?php
+/**
+ * Endpoint registrasi user baru.
+ * Menerima POST JSON: { "username": "...", "password": "...", "email": "..." }
+ * Mengembalikan JSON hasil registrasi.
+ */
+
 header('Access-Control-Allow-Origin: http://localhost:5173'); // Atau ganti * dengan asal frontend Anda
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
@@ -26,6 +32,7 @@ if (!isset($data['username'], $data['password'], $data['email'])) {
     echo json_encode(['success' => false, 'message' => 'All fields required']);
     exit;
 }
+
 $auth = new AuthController($pdo);
 $result = $auth->register($data['username'], $data['password'], $data['email']);
 echo json_encode($result);
